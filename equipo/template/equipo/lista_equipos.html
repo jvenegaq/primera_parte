@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Equipos</title>
+</head>
+<body>
+    <h1>Lista de Equipos</h1>
+    <ul>
+        {% for equipo in equipos %}
+        <li>{{ equipo.nombre }} - {{ equipo.ciudad }} - Color de camiseta: {{ equipo.color_camiseta }} - Hinchada: {{ equipo.hinchada }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
